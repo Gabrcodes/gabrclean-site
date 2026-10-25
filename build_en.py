@@ -87,6 +87,19 @@ PAIRS = [
     ("<p>ابعتلنا دلوقتي ونحدد ميعاد الاستلام.</p>", "<p>Message us now and we'll set a pickup time.</p>"),
     ('جبر كلين · <span class="en">Gabrclean, Maadi, Cairo</span>', 'Gabrclean · <span lang="ar">جبر كلين، المعادي، القاهرة</span>'),
     ('aria-label="واتساب"', 'aria-label="WhatsApp"'),
+    ('<link rel="canonical" href="https://clean.gabr.online/">', '<link rel="canonical" href="https://clean.gabr.online/en/">'),
+    ("<p>إيميل: ", "<p>Email: "),
+    ("<h2>أسئلة بتتسأل كتير</h2>", "<h2>Frequently asked questions</h2>"),
+    ("بتستلموا الهدوم من فين؟", "Where do you pick up from?"),
+    ("من أي مكان في القاهرة: المعادي، الزمالك، مصر الجديدة، التجمع، مدينة نصر وغيرها. ابعتلنا على واتساب ونتفق على ميعاد الاستلام.",
+     "Anywhere in Cairo: Maadi, Zamalek, Heliopolis, New Cairo, Nasr City and more. Message us on WhatsApp and we'll agree on a pickup time."),
+    ("بتصبغوا الهدوم بألوان إيه؟", "Which colors do you dye clothes in?"),
+    ("بنصبغ بالأسود والبني والكحلي، وده بيرجّع لون الهدوم الباهتة زي العبايات والبناطيل والبدل. ابعتلنا صورة القطعة ونقولك ينفع ولا لأ.",
+     "Black, brown and navy. It brings faded clothes such as abayas, trousers and suits back to their color. Send us a photo and we'll tell you if it can be done."),
+    ("بتنضفوا السجاد في البيت؟", "Do you clean carpets at home?"),
+    ("أيوه، فريقنا بييجي لحد عندك وينضف السجاد والموكيت في البيت.", "Yes. Our team comes to you and cleans rugs and fitted carpet in your home."),
+    ("مواعيدكم إيه؟", "What are your opening hours?"),
+    ("مفتوحين من 10 الصبح لـ 10 بالليل من السبت للخميس، والجمعة إجازة.", "We're open 10 am to 10 pm, Saturday to Thursday. Closed on Fridays."),
 ]
 
 

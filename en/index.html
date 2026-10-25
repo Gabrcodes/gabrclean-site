@@ -10,6 +10,7 @@
 <meta property="og:image" content="https://clean.gabr.online/assets/og.png">
 <meta property="og:url" content="https://clean.gabr.online/en/">
 <meta name="theme-color" content="#2F6BF5">
+<link rel="canonical" href="https://clean.gabr.online/en/">
 <link rel="alternate" hreflang="ar" href="https://clean.gabr.online/">
 <link rel="alternate" hreflang="en" href="https://clean.gabr.online/en/">
 <link rel="alternate" hreflang="x-default" href="https://clean.gabr.online/">
@@ -19,7 +20,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Alexandria:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"DryCleaningOrLaundry","name":"جبر كلين | Gabrclean","url":"https://clean.gabr.online/","image":"https://clean.gabr.online/assets/og.png","logo":"https://clean.gabr.online/assets/icon-720.png","telephone":"+20227024666","foundingDate":"1987","address":{"@type":"PostalAddress","streetAddress":"3 Abdel Moneim Riad St., El Arab","addressLocality":"Maadi","addressRegion":"Cairo","addressCountry":"EG"},"areaServed":"Cairo","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/gabr.clean/"]}
+{"@context":"https://schema.org","@type":"DryCleaningOrLaundry","name":"جبر كلين | Gabrclean","url":"https://clean.gabr.online/","image":"https://clean.gabr.online/assets/og.png","logo":"https://clean.gabr.online/assets/icon-720.png","telephone":"+20227024666","email":"gabrclean@gabr.online","knowsLanguage":["ar","en"],"hasMap":"https://www.google.com/maps/search/?api=1&query=%D8%AC%D8%A8%D8%B1%20%D9%83%D9%84%D9%8A%D9%86%20%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%AF%D9%8A","foundingDate":"1987","address":{"@type":"PostalAddress","streetAddress":"3 Abdel Moneim Riad St., El Arab","addressLocality":"Maadi","addressRegion":"Cairo","addressCountry":"EG"},"areaServed":{"@type":"City","name":"Cairo"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/gabr.clean/"]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do you pick up from?", "acceptedAnswer": {"@type": "Answer", "text": "Anywhere in Cairo: Maadi, Zamalek, Heliopolis, New Cairo, Nasr City and more. Message us on WhatsApp and we'll agree on a pickup time."}}, {"@type": "Question", "name": "Which colors do you dye clothes in?", "acceptedAnswer": {"@type": "Answer", "text": "Black, brown and navy. It brings faded clothes such as abayas, trousers and suits back to their color. Send us a photo and we'll tell you if it can be done."}}, {"@type": "Question", "name": "Do you clean carpets at home?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our team comes to you and cleans rugs and fitted carpet in your home."}}, {"@type": "Question", "name": "What are your opening hours?", "acceptedAnswer": {"@type": "Answer", "text": "We're open 10 am to 10 pm, Saturday to Thursday. Closed on Fridays."}}]}
 </script>
 <style>
 :root{
@@ -133,6 +137,16 @@ section{padding-block:88px}
 .hours tr.off td{color:#B42318}
 .card a.lnk{color:var(--blue);font-weight:600;text-decoration:none}
 .num{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+
+/* faq */
+.faq{display:grid;gap:12px;max-width:860px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.faq summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--blue);font-size:24px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:6px}
+.faq p{margin:10px 0 0;color:var(--muted)}
 
 /* cta + footer */
 .cta{background:var(--blue);color:#fff;border-radius:28px;padding:56px 48px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px}
@@ -323,7 +337,23 @@ footer .lockup{height:30px;width:133px}
           <p>WhatsApp: <a class="lnk num" href="https://wa.me/201227696225" rel="noopener">0122 769 6225</a></p>
           <p>Phone: <a class="lnk num" href="tel:+20227024666">02 2702 4666</a></p>
           <p>Instagram: <a class="lnk en" href="https://www.instagram.com/gabr.clean/" rel="noopener">@gabr.clean</a></p>
+          <p>Email: <a class="lnk en" href="mailto:gabrclean@gabr.online">gabrclean@gabr.online</a></p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Where do you pick up from?</summary><p>Anywhere in Cairo: Maadi, Zamalek, Heliopolis, New Cairo, Nasr City and more. Message us on WhatsApp and we'll agree on a pickup time.</p></details>
+        <details><summary>Which colors do you dye clothes in?</summary><p>Black, brown and navy. It brings faded clothes such as abayas, trousers and suits back to their color. Send us a photo and we'll tell you if it can be done.</p></details>
+        <details><summary>Do you clean carpets at home?</summary><p>Yes. Our team comes to you and cleans rugs and fitted carpet in your home.</p></details>
+        <details><summary>What are your opening hours?</summary><p>We're open 10 am to 10 pm, Saturday to Thursday. Closed on Fridays.</p></details>
       </div>
     </div>
   </section>
