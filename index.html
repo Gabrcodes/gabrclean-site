@@ -10,6 +10,9 @@
 <meta property="og:image" content="https://clean.gabr.online/assets/og.png">
 <meta property="og:url" content="https://clean.gabr.online/">
 <meta name="theme-color" content="#2F6BF5">
+<link rel="alternate" hreflang="ar" href="https://clean.gabr.online/">
+<link rel="alternate" hreflang="en" href="https://clean.gabr.online/en/">
+<link rel="alternate" hreflang="x-default" href="https://clean.gabr.online/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-720.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +53,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(245,248,253,.9);backdrop
 .bar nav a{text-decoration:none;color:var(--muted)}
 .bar nav a:hover{color:var(--ink)}
 .bar .btn{padding:10px 18px;font-size:15px}
+.bar .end{display:flex;align-items:center;gap:14px}
+.lang{font-size:15px;font-weight:600;color:var(--blue);text-decoration:none;padding:6px 10px;border-radius:8px}
+.lang:hover{background:var(--tint)}
 
 /* hero */
 .hero{padding-block:72px 56px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
@@ -80,11 +86,11 @@ section{padding-block:88px}
 .svc .ic{width:52px;height:52px;border-radius:14px;background:var(--tint);display:grid;place-items:center}
 .svc .ic svg{width:28px;height:28px}
 .svc h3{font-size:22px;margin-top:8px}
-.svc .en{font-size:13px;color:var(--muted)}
+.svc .en,.svc .sub{font-size:13px;color:var(--muted)}
 .svc p{margin:4px 0 0;font-size:15px;color:var(--muted);line-height:1.65}
 .svc.feature{background:var(--navy);color:#fff;border-color:var(--navy)}
 .svc.feature .ic{background:rgba(255,255,255,.1)}
-.svc.feature .en,.svc.feature p{color:#C9D6F2}
+.svc.feature .en,.svc.feature .sub,.svc.feature p{color:#C9D6F2}
 .swatches{display:flex;gap:8px;margin-top:auto;padding-top:12px}
 .swatches i{width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.7)}
 .badge{align-self:flex-start;background:var(--sun);color:var(--navy);font-size:12px;font-weight:600;padding:2px 10px;border-radius:6px}
@@ -123,7 +129,7 @@ section{padding-block:88px}
 .card p{margin:0;color:var(--muted)}
 .hours{width:100%;border-collapse:collapse;font-size:15px}
 .hours td{padding:4px 0;color:var(--muted)}
-.hours td:last-child{text-align:left;font-variant-numeric:tabular-nums;direction:ltr}
+.hours td:last-child{text-align:end;font-variant-numeric:tabular-nums;direction:ltr}
 .hours tr.off td{color:#B42318}
 .card a.lnk{color:var(--blue);font-weight:600;text-decoration:none}
 .num{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
@@ -177,7 +183,10 @@ footer .lockup{height:30px;width:133px}
     <nav aria-label="أقسام الموقع">
       <a href="#services">خدماتنا</a><a href="#how">إزاي بنشتغل</a><a href="#signature">سيجنتشر</a><a href="#visit">المكان والمواعيد</a>
     </nav>
-    <a class="btn btn-wa" href="https://wa.me/201227696225?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%AC%D8%A8%D8%B1%20%D9%83%D9%84%D9%8A%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%AD%D8%AC%D8%B2" rel="noopener"><svg><use href="#wa"/></svg><span>احجز على واتساب</span></a>
+    <div class="end">
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
+      <a class="btn btn-wa" href="https://wa.me/201227696225?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%AC%D8%A8%D8%B1%20%D9%83%D9%84%D9%8A%D9%86%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%AD%D8%AC%D8%B2" rel="noopener"><svg><use href="#wa"/></svg><span>احجز على واتساب</span></a>
+    </div>
   </div>
 </header>
 
